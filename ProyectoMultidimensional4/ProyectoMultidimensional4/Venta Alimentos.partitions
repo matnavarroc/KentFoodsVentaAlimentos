@@ -1,0 +1,165 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bbd32a57-fdff-4c22-9d45-00bb354db17e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Venta Alimentos</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Cliente</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9b85bbbd-acd3-499a-8a36-786d94a955b7">
+          <ID>Cliente</ID>
+          <Name>Cliente</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4ab2b052-8900-408f-918e-ad5827dceb88">
+            <DataSourceViewID>Venta Alimentos</DataSourceViewID>
+            <TableID>dbo_Cliente</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Detalle Venta</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="44fe7dc4-128c-4526-8026-56583b3132cf">
+          <ID>Detalle Venta</ID>
+          <Name>Detalle Venta</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ecf23f00-8786-42d7-becb-baf9cc82006e">
+            <DataSourceViewID>Venta Alimentos</DataSourceViewID>
+            <TableID>dbo_DetalleVenta</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Venta</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a4d8206a-b67c-420c-89d8-0918bc45de28">
+          <ID>Venta</ID>
+          <Name>Venta</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9af250f2-19de-4f20-bab5-f5f692fbbf39">
+            <DataSourceViewID>Venta Alimentos</DataSourceViewID>
+            <TableID>dbo_Venta</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sucursal</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d63ea861-11c6-4ad2-aa25-e660dc88342b">
+          <ID>Sucursal</ID>
+          <Name>Sucursal</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3a72f70e-1b5c-4d26-93b7-babddc2580ec">
+            <DataSourceViewID>Venta Alimentos</DataSourceViewID>
+            <TableID>dbo_Sucursal</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Producto</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="bd6bd0d7-9400-40bd-accc-564c589b5883">
+          <ID>Producto</ID>
+          <Name>Producto</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ed7410d8-a601-496c-b198-71b7e078062b">
+            <DataSourceViewID>Venta Alimentos</DataSourceViewID>
+            <TableID>dbo_Producto</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Region</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e31ab414-263e-4b7a-8958-c1d01340aa28">
+          <ID>Region</ID>
+          <Name>Region</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="55b3cf05-c5a0-411c-bdc9-9e70596cbeb9">
+            <DataSourceViewID>Venta Alimentos</DataSourceViewID>
+            <TableID>dbo_Region</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Empleado</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a4b25000-5e40-43b0-9dfd-f02f9fb0f333">
+          <ID>Empleado</ID>
+          <Name>Empleado</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="311ac035-31a0-44ba-98a4-f53179638657">
+            <DataSourceViewID>Venta Alimentos</DataSourceViewID>
+            <TableID>dbo_Empleado</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Categoria</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6776a4b3-22bc-4459-9bbf-1a53b2d634f3">
+          <ID>Categoria</ID>
+          <Name>Categoria</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fcb99a0f-4610-4aca-a792-644841ec45ce">
+            <DataSourceViewID>Venta Alimentos</DataSourceViewID>
+            <TableID>dbo_Categoria</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

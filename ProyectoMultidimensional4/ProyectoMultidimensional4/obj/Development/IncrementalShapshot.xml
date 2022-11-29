@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>ProyectoMultidimensional4</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>xEQB3/WdKERt4oEPkEKVZxV0SAw=29-11-2022 11:55:0628-11-2022 18:35:29</TimeStamp>
+        <ID>
+          <String>Localhost</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>ytFQw6QmKEEFhkwxEAMhNYpq2J4=29-11-2022 11:46:5329-11-2022 11:46:35</TimeStamp>
+        <ID>
+          <String>Venta Alimentos</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>t2KdQTgeUa78D15ThfKoAnYXdEA=29-11-2022 11:50:5729-11-2022 11:48:02</TimeStamp>
+        <ID>
+          <String>Cliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2yB03DHnPhhG70MDwpbECb/3kZo=29-11-2022 11:50:5629-11-2022 11:48:03</TimeStamp>
+        <ID>
+          <String>Detalle Venta</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZF8opsmnS1Ron8Zmo74FddWY6Sg=29-11-2022 11:50:5629-11-2022 11:48:03</TimeStamp>
+        <ID>
+          <String>Venta</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gbn9N2SFqeSHMCCKoAVQ7wGSDys=29-11-2022 11:50:5629-11-2022 11:48:03</TimeStamp>
+        <ID>
+          <String>Sucursal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/VP1/8pi8LDXN2yj22EScOsakxo=29-11-2022 11:50:5629-11-2022 11:48:03</TimeStamp>
+        <ID>
+          <String>Producto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TfQQFMMUpWOJuCN4BvrZdW1w5MI=29-11-2022 11:50:5629-11-2022 11:48:03</TimeStamp>
+        <ID>
+          <String>Region</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uNniTLNPR4CXhgRlJBIg7OYGJwQ=29-11-2022 11:50:5629-11-2022 11:48:03</TimeStamp>
+        <ID>
+          <String>Empleado</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kk1A0iXyDa2eedyT5GIexuqMg3o=29-11-2022 11:52:1529-11-2022 11:48:03</TimeStamp>
+        <ID>
+          <String>Categoria</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>IJAPKr2Qi8WvZLPsdf0yWjHTvxs=29-11-2022 11:52:1529-11-2022 11:48:02ATMrdRkB4RVKYwT/NLwWoPoL3MY=29-11-2022 11:48:0329-11-2022 11:48:02</TimeStamp>
+        <ID>
+          <String>Venta Alimentos</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>9Oh3gScL65xCvGcpGtMMgfGmgCU=28-11-2022 18:28:0628-11-2022 18:27:57</TimeStamp>
+      <ID>
+        <String>ProyectoMultidimensional4</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>false</ProcessingComplete>
+  <LastDeployed>2022-11-29T14:55:08.596667Z</LastDeployed>
+</DeploymentSnapshot>
